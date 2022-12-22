@@ -64,6 +64,31 @@ const users = [
 ]
 
 
-users.map((user) =>{
-    console.log(user.name) // accesing the items in the array
-})
+// users.map((user) =>{
+//     console.log(user.name) // accesing the items in the array
+// })
+
+//array of objects
+const products = [
+    {
+        name: 'laptop',
+        price: 1000,
+        quantity: 2
+    },
+    {
+        name: 'mobile',
+        price: 500,
+        quantity: 3
+    },
+    {
+        name: 'watch',
+        price: 100,
+        quantity: 4
+    }
+]
+
+const total = products.map(product=>({
+    name: product.name,
+    totalVal: product.price * product.quantity
+}))
+console.log(total)

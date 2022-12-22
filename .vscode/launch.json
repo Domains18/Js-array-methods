@@ -3,6 +3,7 @@
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
+    "console": "integratedTerminal",
     "configurations": [
         {
             "type": "node",
@@ -11,7 +12,8 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\forEach.js"
+            "program": "${workspaceFolder}\\mapMethod.js"
+            
         }
     ]
 }
